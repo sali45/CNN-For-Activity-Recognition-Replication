@@ -105,6 +105,12 @@ model.add(Activation('relu'))
 model.add(Conv2D(32, filter_size, 3, border_mode='same'))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(max_pooling_size))
+model.add(Dropout(dropout_probability))
+
+model.fit(x_train, y_train,
+          batch_size=batch_size,
+          epochs=epochs,
+          validation_data=(x_test, y_test))
 
 
 
