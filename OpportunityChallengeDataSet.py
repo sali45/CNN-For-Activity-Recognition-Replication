@@ -6,6 +6,7 @@ from keras.models import Sequential, Model
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D
 from keras.layers.core import Activation
+from keras.utils import np_utils
 from keras import backend as K
 
 #Training Parameters
@@ -94,19 +95,23 @@ with open('S4-Drill.dat', newline='') as inputfile:
     for row in csv.reader(inputfile):
         DrillTest.append(row)
 (x_test, y_test) = ADLTest, DrillTest
-print(x_test.shape[0], 'test samples')
 
-y_train = keras.utils.to_categorical(y_train, num_classes)
-y_test = keras.utils.to_categorical(y_test, num_classes)
+y_train = np_utils.to_categorical(y_train, num_classes)
+y_test = np_utils.to_categorical(y_test, num_classes)
 
 model = Sequential()
-model.add(Conv2D(64, filter_size, 3, border_mode='same'))
+
+model.add(Conv2D(batch_size, filter_size, 3, border_mode='same'))
 model.add(Activation('relu'))
-model.add(Conv2D(32, filter_size, 3, border_mode='same'))
+
+model.add(Conv2D(batch_size, filter_size, 3, border_mode='same'))
 model.add(Activation('relu'))
+
 model.add(MaxPooling2D(max_pooling_size))
 model.add(Dropout(dropout_probability))
 
+model.add(Dense(1))
+model.add(Activation('sigmoid'))
 model.fit(x_train, y_train,
           batch_size=batch_size,
           epochs=epochs,
