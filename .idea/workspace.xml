@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ab824d43-ab8a-421d-be3c-fd4966c3b3a2" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$APPLICATION_CONFIG_DIR$/options/project.default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OpportunityModel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Preprocessing.py" />
       <change type="DELETED" beforePath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The Number copy/AppDelegate.swift" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The Number copy/Assets.xcassets/AppIcon.appiconset/Contents.json" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The Number copy/Base.lproj/LaunchScreen.storyboard" afterPath="" />
@@ -14,7 +12,6 @@
       <change type="DELETED" beforePath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The Number.xcodeproj/xcuserdata/saqibali.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The Number/Main.storyboard" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/Documents/IOSClub/Guess The Number/GuessTheNumber" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/OpportunityChallengeDataSet.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The Number.xcodeproj/project.xcworkspace/xcuserdata/saqibali.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The Number.xcodeproj/project.xcworkspace/xcuserdata/saqibali.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The Number.xcodeproj/project.pbxproj" afterPath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The Number.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The Number.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterPath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The Number.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
@@ -25,9 +22,8 @@
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The Number/ViewController.swift" afterPath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The Number/ViewController.swift" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The NumberTests/Guess_The_NumberTests.swift" afterPath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The NumberTests/Guess_The_NumberTests.swift" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The NumberUITests/Guess_The_NumberUITests.swift" afterPath="$USER_HOME$/Documents/IOSClub/Guess The Number/Guess The NumberUITests/Guess_The_NumberUITests.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CNN_for_Human_Activity_Recognition_using_Mobile_Sensors_Replication.iml" afterPath="$PROJECT_DIR$/.idea/CNN_for_Human_Activity_Recognition_using_Mobile_Sensors_Replication.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpportunityModel.py" afterPath="$PROJECT_DIR$/OpportunityModel.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,11 +35,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OpportunityModel.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OpportunityModel.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OpportunityModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+            <state relative-caret-position="213">
+              <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -51,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Preprocessing.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Preprocessing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="26" column="80" lean-forward="true" selection-start-line="26" selection-start-column="80" selection-end-line="26" selection-end-column="80" />
+            <state relative-caret-position="-31">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -133,8 +129,8 @@
         <option value="$PROJECT_DIR$/OpportunityChallengeLabeled/challenge_label_legend.txt" />
         <option value="/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py" />
         <option value="$PROJECT_DIR$/OpportunityChallengeDataSet.py" />
-        <option value="$PROJECT_DIR$/OpportunityModel.py" />
         <option value="$PROJECT_DIR$/Preprocessing.py" />
+        <option value="$PROJECT_DIR$/OpportunityModel.py" />
       </list>
     </option>
   </component>
@@ -772,22 +768,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpportunityModel.py">
+    <entry file="file://$PROJECT_DIR$/Preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+        <state relative-caret-position="-31">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Preprocessing.py">
+    <entry file="file://$PROJECT_DIR$/OpportunityModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="26" column="80" lean-forward="true" selection-start-line="26" selection-start-column="80" selection-end-line="26" selection-end-column="80" />
+        <state relative-caret-position="213">
+          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

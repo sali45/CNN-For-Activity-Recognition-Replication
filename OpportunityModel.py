@@ -24,23 +24,29 @@ num_classes = 11
 filter_size= 20
 max_pooling_size = 3
 dropout_probability = (0.7)
+learning_rate = 0.05
+momentum = 0.5
+decay = 0.25
 
-#Forward Propogation
 model = Sequential()
 
 #X
 model.add(Dense(64))
-model.add(Conv2D(12))
+model.add(Conv2D(12 + filter_size + 1, filter_size))
+model.add(Activation('tanh'))
 model.add(MaxPooling2D((4, max_pooling_size)))
 
 #Y
 model.add(Dense(64))
-model.add(Conv2D(12))
+#N - m + 1
+model.add(Conv2D(12 + filter_size + 1, filter_size))
+model.add(Activation('tanh'))
 model.add(MaxPooling2D((4, max_pooling_size)))
 
 #Z
 model.add(Dense(64))
-model.add(Conv2D(12))
+model.add(Conv2D(12 + filter_size + 1, filter_size))
+model.add(Activation('tanh'))
 model.add(MaxPooling2D((4, max_pooling_size)))
 
 #Hidden Layers
@@ -50,7 +56,13 @@ Dropout(dropout_probability)
 
 #SoftMax
 model.add(Activation('softmax'))
-#Backward Propogation
+
+#Forward Propogation
+
+#Backwards Propogation
+
+#Regularization
+keras.optimizers.SGD(lr=learning_rate, momentum=momentum, decay=decay)
 
 
 
