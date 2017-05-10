@@ -1,5 +1,6 @@
 import cPickle as cp
 import numpy as np
+from itertools import islice
 import keras
 from keras.preprocessing import image
 SLIDING_WINDOW_LENGTH = 64
@@ -24,8 +25,6 @@ OPPORTUNITY_FILE_NAMES = ['OpportunityUCIDataset/dataset/S1-Drill.dat',
                           'OpportunityUCIDataset/dataset/S3-ADL4.dat',
                           'OpportunityUCIDataset/dataset/S3-ADL5.dat']
 
-#keras.preprocessing.image.ImageDataGenerator(samplewise_std_normalization=True)
-
 def feature_normalize(dataset):
     mu = np.mean(dataset,axis = 0)
     sigma = np.std(dataset,axis = 0)
@@ -37,10 +36,21 @@ def load_dataset(filename):
     data = cp.load(f)
     f.close()
 
-    x_train, y_train = data[0]
-    x_test, y_test = data[1]
+    x_train, y_train = window(data)[0]
+    x_test, y_test = window(data)[1]
 
     return x_train, y_train, x_test, y_test
+
+def window(seq, n=SLIDING_WINDOW_OVERLAP):
+    "Returns a sliding window (of width n) over data from the iterable"
+    "   s -> (s0,s1,...s[n-1]), (s1,s2,...,sn), ...                   "
+    it = iter(seq)
+    result = tuple(islice(it, n))
+    if len(result) == n:
+        yield result
+    for elem in it:
+        result = result[1:] + (elem,)
+        yield result
 
 print "loading data..."
 for fileName in OPPORTUNITY_FILE_NAMES:
