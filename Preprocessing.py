@@ -16,14 +16,20 @@ OPPORTUNITY_FILE_NAMES = ['OpportunityChallengeLabeled/S1-Drill.dat',
                           'OpportunityChallengeLabeled/S2-ADL1.dat',
                           'OpportunityChallengeLabeled/S2-ADL2.dat',
                           'OpportunityChallengeLabeled/S2-ADL3.dat',
+                          'OpportunityChallengeLabeled/S2-ADL4.dat',
+                          'OpportunityChallengeLabeled/S2-ADL5.dat',
                           'OpportunityChallengeLabeled/S3-Drill.dat',
                           'OpportunityChallengeLabeled/S3-ADL1.dat',
                           'OpportunityChallengeLabeled/S3-ADL2.dat',
                           'OpportunityChallengeLabeled/S3-ADL3.dat',
-                          'OpportunityChallengeLabeled/S2-ADL4.dat',
-                          'OpportunityChallengeLabeled/S2-ADL5.dat',
                           'OpportunityChallengeLabeled/S3-ADL4.dat',
-                          'OpportunityChallengeLabeled/S3-ADL5.dat']
+                          'OpportunityChallengeLabeled/S3-ADL5.dat',
+                          'OpportunityChallengeLabeled/S4-Drill.dat',
+                          'OpportunityChallengeLabeled/S4-ADL1.dat',
+                          'OpportunityChallengeLabeled/S4-ADL2.dat',
+                          'OpportunityChallengeLabeled/S4-ADL3.dat',
+                          'OpportunityChallengeLabeled/S4-ADL4.dat',
+                          'OpportunityChallengeLabeled/S4-ADL5.dat']
 
 def feature_normalize(dataset):
     mu = np.mean(dataset,axis = 0)
