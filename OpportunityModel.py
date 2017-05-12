@@ -31,27 +31,27 @@ decay = 0.25
 model = Sequential()
 
 #X
-model.add(Dense(64))
-model.add(Conv2D(12 + filter_size + 1, filter_size))
+model.add(Dense(64, input_shape=(16,)))
+model.add(Conv2D(12, filter_size))
 model.add(Activation('tanh'))
 model.add(MaxPooling2D((4, max_pooling_size)))
 
 #Y
-model.add(Dense(64))
+model.add(Dense(64, input_shape=(16,)))
 #N - m + 1
-model.add(Conv2D(12 + filter_size + 1, filter_size))
+model.add(Conv2D(12, filter_size))
 model.add(Activation('tanh'))
 model.add(MaxPooling2D((4, max_pooling_size)))
 
 #Z
-model.add(Dense(64))
-model.add(Conv2D(12 + filter_size + 1, filter_size))
+model.add(Dense(64, input_shape=(16,)))
+model.add(Conv2D(12 , filter_size))
 model.add(Activation('tanh'))
 model.add(MaxPooling2D((4, max_pooling_size)))
 
 #Hidden Layers
-model.add(Dense(1024))
-model.add(Dense(30))
+model.add(Dense(1024, input_shape=(16,)))
+model.add(Dense(30, input_shape=(16,)))
 Dropout(dropout_probability)
 
 #SoftMax
